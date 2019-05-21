@@ -4,3 +4,5 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+
+In many ways, smart cities are similar to other types of cities and afflicted by similar concerns and problems, such as proper allocation of budget, maintenance of city services and keeping crime down. Hence in analyzing smart cities, there are many similar considerations that overlap with other types of cities. In this report, for the sake of constraining my scope, I will focus on the subset of considerations that are more pertinent, if not outright exclusive, to smart cities.

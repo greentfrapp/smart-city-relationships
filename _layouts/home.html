@@ -4,13 +4,16 @@ layout: default
 
 {%- include frontmatter.html -%}
 
-<div class="wrapper">
+<hr/>
+
+<div class="content">
 
   {{ content }}
 
-  <hr/>
+  <h1>Sections</h1>
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% assign posts = site.posts | sort: 'date' %}
+    {% for post in posts %}
       {% if post.draft != true %}
       <li>
         <div class="post-meta" style='width: 120px; display:inline-block; vertical-align: top; padding-top: 10px;'>{{ post.date | date: "%b %-d, %Y" }}</div>
@@ -23,7 +26,7 @@ layout: default
           {{ post.subtitle | escape }}
         </h4>
 
-        <span class="tags">{% for tag in post.tags %}{% capture tag_name %}{{ tag }}{% endcapture %}<a href="/tag/{{ tag_name }}">&middot;<nobr>{{ tag_name }}</nobr>&nbsp;</a>{% endfor %}</span>
+        <!-- <span class="tags">{% for tag in post.tags %}{% capture tag_name %}{{ tag }}{% endcapture %}<a href="/tag/{{ tag_name }}">&middot;<nobr>{{ tag_name }}</nobr>&nbsp;</a>{% endfor %}</span> -->
       </div>
       </li>
       {% endif %}
