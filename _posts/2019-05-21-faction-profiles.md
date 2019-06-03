@@ -5,6 +5,7 @@ subtitle: "Businesses, Government, People."
 date:   2019-05-21 00:00:01
 tags: social ai commentary
 comments: True
+draft: True
 ---
 
 <div class='note note-left'>

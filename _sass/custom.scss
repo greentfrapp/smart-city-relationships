@@ -1,4 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Open+Sans:400,600|Ubuntu+Mono|Lato|Cambo|Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Playfair+Display|Open+Sans:400,600|Ubuntu+Mono|Lato|Cambo|Libre+Baskerville');
+
+h1, h2, h3, h4 {
+	color: #2c3e50;
+}
+
+h1, h2 {
+	font-family: 'Playfair Display';
+}
+
+h3, h4 {
+	font-family: 'Fjalla One';
+}
+
+h3 {
+	text-transform: uppercase;
+	font-weight: 300;
+	border-left: 2px solid #2c3e50;
+	padding-left: 5px;
+}
 
 #title {
 	grid-area: title;
@@ -39,10 +58,33 @@
 }
 
 .content {
-	width: 60%;
+	width: 100%;
+}
+
+.post-header,
+.post-content {
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	@include relative-font-size(1.2);
+	line-height: 32px;
+}
+
+.post-header p,
+.post-header h1,
+.post-header h2,
+.post-header h3,
+.post-header h4,
+.post-content p,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content ul {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	
 }
 
 .content h1 {
@@ -80,16 +122,23 @@
 	}
 }
 
+//hr {
+//	width: whatever;
+//	margin: 10px auto;
+//	height: 32px;
+//	background: #fff url(./hr.svg) no-repeat scroll center;
+//	border: 0;
+//}
+
 hr {
-	width: whatever;
-	margin: 10px auto;
-	height: 32px;
-	background: #fff url(./hr.svg) no-repeat scroll center;
-	border: 0;
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 
-li {
-	margin-top: 10px;
+.post-list li {
+	margin-bottom: 0px;
 }
 
 .tags {

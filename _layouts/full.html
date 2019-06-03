@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{%- include frontmatter.html -%}
+
+<hr/>
+
+<div class="content">
+  <div class="post-content">
+    {% assign posts = site.posts | sort: 'date' %}
+    {% for post in posts %}
+      {% if post.draft != true %}
+      <h2>{{ post.title }}</h2>
+      {{ post.content }}
+      <hr/>
+      {% endif %}
+    {% endfor %}
+
+  </div>
+</div>
